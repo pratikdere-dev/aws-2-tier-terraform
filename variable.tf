@@ -38,3 +38,17 @@ variable "key" {
 variable "instance_type" {
   default = "t3.micro"
 }
+# variable for Db server private subnet 
+variable "db_sub_cidr" {
+    default = "10.0.32.0/20"
+  
+}
+variable "az3" {
+    default = "us-east-1c"
+  
+}
+#new
+variable "admin_cidr" {
+  description = "Your public IP address with /32"
+  default     = "0.0.0.0/0"
+}
